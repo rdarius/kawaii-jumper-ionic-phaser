@@ -1,0 +1,116 @@
+{
+  "projectType": "application",
+  "root": "apps/kawaii-jumper",
+  "sourceRoot": "apps/kawaii-jumper/src",
+  "prefix": "opneforge",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/apps/kawaii-jumper",
+        "index": "apps/kawaii-jumper/src/index.html",
+        "main": "apps/kawaii-jumper/src/main.ts",
+        "polyfills": "apps/kawaii-jumper/src/polyfills.ts",
+        "tsConfig": "apps/kawaii-jumper/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/kawaii-jumper/src/assets",
+          {
+            "glob": "**/*.svg",
+            "input": "node_modules/ionicons/dist/ionicons/svg",
+            "output": "./svg"
+          }
+        ],
+        "styles": [
+          "apps/kawaii-jumper/src/global.scss"
+        ],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "2mb",
+              "maximumError": "3mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/kawaii-jumper/src/environments/environment.ts",
+              "with": "apps/kawaii-jumper/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "kawaii-jumper:build:production"
+        },
+        "development": {
+          "browserTarget": "kawaii-jumper:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "kawaii-jumper:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/kawaii-jumper/src/**/*.ts",
+          "apps/kawaii-jumper/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/apps/kawaii-jumper"
+      ],
+      "options": {
+        "jestConfig": "apps/kawaii-jumper/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "stylelint": {
+      "executor": "nx-stylelint:lint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "apps/kawaii-jumper/**/*.css",
+          "apps/kawaii-jumper/**/*.scss"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

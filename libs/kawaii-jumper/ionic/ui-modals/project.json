@@ -1,16 +1,16 @@
 {
   "projectType": "library",
-  "root": "libs/shared/data-access-model",
-  "sourceRoot": "libs/shared/data-access-model/src",
+  "root": "libs/kawaii-jumper/ionic/ui-modals",
+  "sourceRoot": "libs/kawaii-jumper/ionic/ui-modals/src",
   "prefix": "rdarius",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": [
-        "coverage/libs/shared/data-access-model"
+        "coverage/libs/kawaii-jumper/ionic/ui-modals"
       ],
       "options": {
-        "jestConfig": "libs/shared/data-access-model/jest.config.js",
+        "jestConfig": "libs/kawaii-jumper/ionic/ui-modals/jest.config.js",
         "passWithNoTests": true
       }
     },
@@ -18,8 +18,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/shared/data-access-model/src/**/*.ts",
-          "libs/shared/data-access-model/src/**/*.html"
+          "libs/kawaii-jumper/ionic/ui-modals/src/**/*.ts",
+          "libs/kawaii-jumper/ionic/ui-modals/src/**/*.html"
         ]
       }
     }

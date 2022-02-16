@@ -7,16 +7,16 @@ This repository will give you a great starting point!
 # Instructions
 
 1. Clone the repository using 'Use template' (and don't forget to give us a Star / Follow on Github, please!)
-2. Search + Replace all instances of 'example-app-e2e' with your app name (important to do this first)
-3. Search + Replace all instances of 'example-app' with your app name
-4. Change the folder names for example-app and example-app-e2e to what you named for steps #1 and #2
-5. Search + Replace all instances of 'openforge-ionic-monorepo-example' with your project name
-6. Search + Replace 'company-name' with your company name.  This is the NX project scope that allows you to import libraries using @company-name
+2. Search + Replace all instances of 'kawaii-jumper-e2e' with your app name (important to do this first)
+3. Search + Replace all instances of 'kawaii-jumper' with your app name
+4. Change the folder names for kawaii-jumper and kawaii-jumper-e2e to what you named for steps #1 and #2
+5. Search + Replace all instances of 'kawaii-jumper' with your project name
+6. Search + Replace 'rdarius' with your company name.  This is the NX project scope that allows you to import libraries using @rdarius
 
 That's it for the renaming!  Now to test...
 
 7. npm install
-8. npx nx run example-app:serve (where example-app is the name you replaced with above)
+8. npx nx run kawaii-jumper:serve (where kawaii-jumper is the name you replaced with above)
 
 You should now load your example app!
 
@@ -50,11 +50,11 @@ Run `nx g @nrwl/react:lib my-lib` to generate a library.
 
 > You can also use any of the plugins above to generate libraries as well.
 
-Libraries are shareable across libraries and applications. They can be imported from `@openforge-ionic-monorepo-example/mylib`.
+Libraries are shareable across libraries and applications. They can be imported from `@kawaii-jumper/mylib`.
 
 ## Development server
 
-Run `npx nx run example-app:serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run `npx nx run kawaii-jumper:serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -79,4 +79,3 @@ Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
 ## Understand your workspace
 
 Run `nx dep-graph` to see a diagram of the dependencies of your projects.
-

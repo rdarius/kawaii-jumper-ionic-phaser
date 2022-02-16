@@ -1,0 +1,28 @@
+{
+  "projectType": "library",
+  "root": "libs/kawaii-jumper/phaser/singleton",
+  "sourceRoot": "libs/kawaii-jumper/phaser/singleton/src",
+  "prefix": "rdarius",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/kawaii-jumper/phaser/singleton"
+      ],
+      "options": {
+        "jestConfig": "libs/kawaii-jumper/phaser/singleton/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/kawaii-jumper/phaser/singleton/src/**/*.ts",
+          "libs/kawaii-jumper/phaser/singleton/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

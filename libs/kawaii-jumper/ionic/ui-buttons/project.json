@@ -1,0 +1,28 @@
+{
+  "projectType": "library",
+  "root": "libs/kawaii-jumper/ionic/ui-buttons",
+  "sourceRoot": "libs/kawaii-jumper/ionic/ui-buttons/src",
+  "prefix": "rdarius",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/kawaii-jumper/ionic/ui-buttons"
+      ],
+      "options": {
+        "jestConfig": "libs/kawaii-jumper/ionic/ui-buttons/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/kawaii-jumper/ionic/ui-buttons/src/**/*.ts",
+          "libs/kawaii-jumper/ionic/ui-buttons/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

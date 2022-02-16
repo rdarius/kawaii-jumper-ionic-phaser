@@ -1,13 +1,13 @@
 {
   "version": 2,
   "projects": {
-    "example-app": "apps/example-app",
-    "example-app-e2e": "apps/example-app-e2e",
-    "example-app-ionic-ui-buttons": "libs/example-app/ionic/ui-buttons",
-    "example-app-ionic-ui-headers": "libs/example-app/ionic/ui-headers",
-    "example-app-ionic-ui-modals": "libs/example-app/ionic/ui-modals",
-    "example-app-phaser-singleton": "libs/example-app/phaser/singleton",
-    "example-app-phaser-ui-modals": "libs/example-app/phaser/ui-modals",
+    "kawaii-jumper": "apps/kawaii-jumper",
+    "kawaii-jumper-e2e": "apps/kawaii-jumper-e2e",
+    "kawaii-jumper-ionic-ui-buttons": "libs/kawaii-jumper/ionic/ui-buttons",
+    "kawaii-jumper-ionic-ui-headers": "libs/kawaii-jumper/ionic/ui-headers",
+    "kawaii-jumper-ionic-ui-modals": "libs/kawaii-jumper/ionic/ui-modals",
+    "kawaii-jumper-phaser-singleton": "libs/kawaii-jumper/phaser/singleton",
+    "kawaii-jumper-phaser-ui-modals": "libs/kawaii-jumper/phaser/ui-modals",
     "data-access-model": "libs/shared/data-access-model"
   }
 }

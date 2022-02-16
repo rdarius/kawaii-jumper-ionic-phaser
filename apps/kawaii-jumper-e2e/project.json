@@ -1,0 +1,34 @@
+{
+  "root": "apps/kawaii-jumper-e2e",
+  "sourceRoot": "apps/kawaii-jumper-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/kawaii-jumper-e2e/cypress.json",
+        "devServerTarget": "kawaii-jumper:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "kawaii-jumper:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "apps/kawaii-jumper-e2e/**/*.{js,ts}"
+        ]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": [
+    "kawaii-jumper"
+  ]
+}

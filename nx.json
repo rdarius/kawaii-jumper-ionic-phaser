@@ -1,5 +1,5 @@
 {
-  "npmScope": "company-name",
+  "npmScope": "rdarius",
   "affected": {
     "defaultBase": "develop"
   },
@@ -54,5 +54,5 @@
       "style": "scss"
     }
   },
-  "defaultProject": "example-app"
+  "defaultProject": "kawaii-jumper"
 }

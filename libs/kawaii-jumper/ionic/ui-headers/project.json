@@ -1,0 +1,28 @@
+{
+  "projectType": "library",
+  "root": "libs/kawaii-jumper/ionic/ui-headers",
+  "sourceRoot": "libs/kawaii-jumper/ionic/ui-headers/src",
+  "prefix": "rdarius",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/kawaii-jumper/ionic/ui-headers"
+      ],
+      "options": {
+        "jestConfig": "libs/kawaii-jumper/ionic/ui-headers/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/kawaii-jumper/ionic/ui-headers/src/**/*.ts",
+          "libs/kawaii-jumper/ionic/ui-headers/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
